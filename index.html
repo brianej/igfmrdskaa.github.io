@@ -107,17 +107,15 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Large Language Models (LLMs) are being described as the state of the art for tasks such as prediction, planning, 
-            and interaction, but there is increasing evidence of their critical limitations. In particular, they can generate 
-            arbitrary responses in new situations, do not support rapid incremental updates and adaptation based on limited examples, 
-            and are opaque. Our work seeks to leverage the complementary strengths of LLMs and knowledge based reasoning systems 
-            and to determine the appropriate use of these systems. Specifically, our architecture utilizes LLMs to provide generic 
-            abstract predictions of upcoming tasks, reasoning with domain-specific knowledge and semantic databases to jointly implement 
-            the current task and prepare for the anticipated task by computing and executing a suitable sequence of concrete actions. 
-            Furthermore, the architecture solicits and uses high-level human feedback based on need and availability to incrementally 
-            revise the domain-specific knowledge and design contextual queries for subsequent interactions with the LLM. We ground and 
-            evaluate our architecture’s abilities in realistic <i>VirtualHome</i> 3D simulation environment, demonstrating a substantial 
-            performance improvement compared with the use of just an LLM.
+            Large Language Models (LLMs) are considered state of the art for multiple tasks in robotics and AI, but there is also increasing evidence of 
+            their critical limitations. They can generate arbitrary responses in new situations, do not support rapid incremental updates and adaptation 
+            based on limited examples, and are opaque. Our work seeks to leverage the complementary strengths of LLMs and knowledge based reasoning systems, 
+            and to determine the appropriate use of these systems. Specifically, our architecture utilizes LLMs to provide generic abstract predictions of 
+            upcoming tasks, reasoning with domain-specific knowledge and semantic databases to compute a plan of concrete actions that jointly implements 
+            the current task and prepares for the anticipated task. Furthermore, the architecture solicits and uses high-level human feedback based on need 
+            and availability to incrementally revise the domain-specific knowledge and design contextual queries for subsequent interactions with the LLM. 
+            We ground and evaluate our architecture’s abilities in the realistic <i>VirtualHome</i> simulation environment, demonstrating a substantial 
+            performance improvement compared with just using LLMs.
           </p>
         </div>
       </div>
