@@ -5,7 +5,7 @@
   <meta name="description"
         content="Integrating Generic Foundation Models and Reasoning with Domain-Specific Knowledge for Assistive Agents.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Integrating Generic Foundation Models and Reasoning with Domain-Specific Knowledge for Assistive Agents</title>
+  <title>Integrating LLM, Non-monotonic Logical Reasoning, and Human-in-the-loop Feedback for an Embodied AI Agent</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -35,10 +35,10 @@
           <h1 class="title is-1 publication-title">Integrating LLM, Non-monotonic Logical Reasoning, and Human-in-the-loop Feedback for an Embodied AI Agent</h1>
           <div class="is-size-3 publication-authors">
             <span class="author-block">
-              <a href="https://authorname.com">Tianyi Fu</a><sup>1</sup>,</span>
+              <a>Tianyi Fu</a><sup>1</sup>,</span>
             </span>
             <span class="author-block">
-              <a href="https://authorname.com">Brian Jauw</a><sup>1</sup></span>
+              <a>Brian Jauw</a><sup>1</sup></span>
             </span>
             <span class="author-block">
               <a href="https://homepages.inf.ed.ac.uk/msridhar/">Mohan Sridharan</a><sup>1</sup>,</span>
@@ -46,48 +46,19 @@
           </div>
 
           <div class="is-size-3 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Edinburgh</span>
+            <span class="author-block"><sup>1</sup>Institute of Perception, Action, and Behavior, School of Informatics, University of Edinburgh</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="pdf link"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="arxvix link"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/Tianyi-Fu/RobotAssistant"
                    class="external-link button is-normal is-rounded is-dark">
-                  
+                  <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/google/datasetlink"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
-
           </div>
         </div>
       </div>
@@ -104,15 +75,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Large Language Models (LLMs) are considered state of the art for multiple tasks in robotics and AI, but there is also increasing evidence of 
-            their critical limitations. They can generate arbitrary responses in new situations, do not support rapid incremental updates and adaptation 
-            based on limited examples, and are opaque. Our work seeks to leverage the complementary strengths of LLMs and knowledge based reasoning systems, 
-            and to determine the appropriate use of these systems. Specifically, our architecture utilizes LLMs to provide generic abstract predictions of 
-            upcoming tasks, reasoning with domain-specific knowledge and semantic databases to compute a plan of concrete actions that jointly implements 
-            the current task and prepares for the anticipated task. Furthermore, the architecture solicits and uses high-level human feedback based on need 
-            and availability to incrementally revise the domain-specific knowledge and design contextual queries for subsequent interactions with the LLM. 
-            We ground and evaluate our architecture’s abilities in the realistic <i>VirtualHome</i> simulation environment, demonstrating a substantial 
-            performance improvement compared with just using LLMs.
+            Large Language Models (LLMs) are considered state of the art for many tasks in robotics and AI, 
+            but there is also increasing evidence of their critical limitations. They can generate arbitrary 
+            responses in new situations, do not support rapid incremental adaptation based on limited examples, 
+            and are opaque. Toward addressing these limitations, our architecture leverages the complementary strengths of LLMs 
+            and knowledge-based reasoning, enabling an  AI agent assisting a human user to use an LLM to provide generic 
+            abstract predictions of upcoming tasks. Also, the agent reasons with domain-specific knowledge, 
+            any recent history of interactions with the user, and semantic databases to: (a) provide contextual prompts to the LLM; 
+            and (b) compute a plan of concrete actions that jointly implements the current task and prepare for the anticipated task, 
+            diagnosing unexpected outcomes and replanning as needed. Furthermore, the architecture solicits 
+            and uses high-level human feedback based on need and availability to incrementally revise the domain-specific knowledge 
+            and interactions with the LLM. We ground and evaluate our architecture’s abilities in the realistic 
+            <em>VirtualHome</em> simulation environment, demonstrating a substantial performance improvement compared with just using 
+            LLMs or an LLM and logical reasoner. 
           </p>
         </div>
       </div>
